@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f3f9f1;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #61460c;
+  color: rgb(0, 0, 0);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.navigation nav ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.navigation nav ul li {
+  position: relative;
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navigation nav ul li a:hover {
+  background-color: #61460c;
+}
+
+.navigation nav ul .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navigation nav ul .dropdown-menu li {
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.navigation nav ul .dropdown-menu li a {
+  padding: 10px;
+  color: white;
+  text-align: left;
+}
+
+.navigation nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3ede1;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #61460c;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.details .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.details .card-link .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.details .card-link .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.details .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.details .card h4 {
+  color: #61460c;
+}
+
+footer {
+  text-align: center;
+  background-color: #61460c;
+  color: white;
+  padding: 10px 0;
+}
